@@ -4,11 +4,10 @@ Site: ar-cities.survey.okfn.org
 
 ## Script to make the site static
 
-We run
+We ran
 
 ```
 wget \
-     -P $domain \
      --recursive \
      --no-clobber \
      --page-requisites \
