@@ -1,0 +1,2881 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Open Knowledge">
+    <title>Transporte Público - Índice de Datos Abiertos de Ciudades de Argentina</title>
+    <!--[if lt IE 9]>
+    <script src="/bower_components/html5shiv/dist/html5shiv.min.js"></script>
+    <![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,400italic,700,300' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="../css/styles.css@v=.css">
+    <style type="text/css">
+      div.row div.col-md-4:nth-of-type(2) { visibility: hidden; } div.sexyHeader { height: 170px !important; } div.sexyHeader table { height: 170px !important; } .sexyHeader table tr th.datasetHeader { vertical-align: bottom; } .sexyHeader table tr th.datasetHeader div { transform: rotate(-90deg) translateX(10px); } .sexyHeader table tr th.datasetHeader div a { width: 150px; } .sexyDragContainer.kinetic-active { margin-top: 52px; }
+    </style>
+
+    
+<!-- configured google analytics specific to this deployment -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-120132330-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+<!-- common tracking code for all -->
+<script type="text/javascript" >
+  var okiConsent = {
+    analyticsTrackingID: "UA-33874954-24"
+  };
+</script>
+<script type='text/javascript' src='https://a.okfn.org/html/oki/consent/assets/js/consent.js'></script>
+
+  </head>
+
+  <body class="">
+    
+    <header id="header">
+      <div class="container">
+        
+        <div class="logo">
+          
+            <a class="glyphicon glyphicon-th-list" aria-hidden="true"></a>
+          
+          <div>
+            <a class="title" href="../index.html" title="Home">Índice de Datos Abiertos de Ciudades de Argentina</a>
+            <span class="tagline">Powered by <a href='http://census.okfn.org'>Open Data Census</a></span>
+          </div>
+        </div>
+        
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <nav class="collapse navbar-collapse" id="nav">
+          
+          <span class="user">
+            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+            
+              <a href="http://id.survey.okfn.org/login">Login</a>
+            
+          </span>
+          
+
+          <ul class="menu">
+            
+            
+              <li><a href="../about/index.html">About</a></li>
+              <li><a href="../changes/index.html">Changes</a></li>
+              <li><a href="../faq/index.html">FAQ</a></li>
+              
+                <li><a href="../methodology/index.html">Methodology</a></li>
+              
+              
+              
+              
+            
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    
+
+    
+    
+
+    
+<div class="breadcrumb-wrapper">
+  <ol class="breadcrumb container">
+    <li><a href="../index.html">Home</a></li>
+    
+    <li class="active">Transporte Público</li>
+  </ol>
+</div>
+
+
+    
+<section id="data-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>
+          Transporte Público
+          <span style="background-color: rgb(223, 204, 51); color: white;" class="dataset-openness" data-score="29">29% open (avg.)</span>
+        </h1>
+        
+        <div class="row navigate">
+          <div class="col-md-12">
+            
+
+  
+
+
+<h5 class="sr-only">Share this page</h5>
+<div class="btn-group">
+
+  <a href="http://twitter.com/share?url=http://ar-cities.survey.okfn.org/dataset/transport&amp;text=Check out this data from the Índice de Datos Abiertos de Ciudades de Argentina" class="btn btn-default btn-sm twitter" target="_blank">
+    <i class="fa fa-twitter"></i> Twitter  </a>
+  <a href="http://www.facebook.com/sharer/sharer.php?u=http://ar-cities.survey.okfn.org/dataset/transport" class="btn btn-default btn-sm facebook" target="_blank">
+    <i class="fa fa-facebook"></i> Facebook  </a>
+  <a href="https://plus.google.com/share?url=http://ar-cities.survey.okfn.org/dataset/transport" class="btn btn-default btn-sm google-plus" target="_blank">
+    <i class="fa fa-google-plus"></i> Google+  </a>
+</div>
+<div class="modal fade" id="embed-instructions" tabindex="-1" role="dialog" aria-labelledby="embedLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="embedLabel">Map embed code</h4>
+      </div>
+      <div class="modal-body">
+        <p>Use the following code to embed the map visualisation into your own website.</p>
+        <pre contenteditable="true">&lt;iframe width="100%" height="360px" src="https://index.okfn.org/vis/map/embed/?embed_width=100%&embed_height=360px&filter_year=2015&filter_dataset=statistics&panel_tools=false&panel_share=false&embed_title=National Statistics ; 2015&map_place=" frameBorder="0"&gt;&lt;/iframe&gt;</pre>
+        <p>If you are a developer, you can read more about the embed options here:
+          <a href="https://github.com/okfn/opendataindex/#choropleth-map" title="Embed options">
+          Embed options
+          </a>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="dataset-about">
+  <div class="container">
+    
+    <p>Horarios del transporte público y los recorridos de cada línea de transporte.</p>
+
+    <ul>
+    
+      <li>Tabla de horarios por estación</li>
+    
+      <li>Recorridos del transporte</li>
+    
+      <li>Paradas o estaciones</li>
+    
+      <li>Línea de transporte</li>
+    
+    </ul>
+  </div>
+</section>
+
+
+<hr />
+
+<section id="dataset-slice-table">
+  <div class="container">
+    
+
+
+  
+  
+
+
+<div class="table-responsive">
+    <table id="slice-table" class="table slice-table data-table table-header-stuck">
+        
+        <colgroup>
+          <col style="width:6%">
+          <col style="width:20%">
+          <col style="width:23%">
+          <col style="width:8%">
+          <col style="width:6%">
+          <col style="width:4%">
+        </colgroup>
+        
+
+        <thead class="" style="">
+          <tr>
+            <th class="clickable">Rank</th>
+            <th class="clickable">Place</th>
+            <th>Breakdown</th>
+            
+            <th>Year</th>
+            
+            <th class="clickable">Score</th>
+            
+            <th class="admin"><span class="sr-only">Admin</span></th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          
+            
+            
+            <tr id="bahia-blanca" class="entry" data-rank="1" data-score="90" data-place="bahia-blanca" data-name="Bahia Blanca">
+              <td class="rank" data-rank="1">1</td>
+              <td><a href="../place/bahia-blanca.html">Bahia Blanca</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:04pm on 28th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="100">
+                <span>100%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=bahia-blanca&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="caba" class="entry" data-rank="1" data-score="90" data-place="caba" data-name="Buenos Aires">
+              <td class="rank" data-rank="1">1</td>
+              <td><a href="../place/caba.html">Buenos Aires</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:57pm on 28th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="100">
+                <span>100%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=caba&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="catamarca" class="entry" data-rank="25" data-score="0" data-place="catamarca" data-name="Catamarca">
+              <td class="rank" data-rank="25">25</td>
+              <td><a href="../place/catamarca.html">Catamarca</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="6:57pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="0">
+                <span>0%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=catamarca&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="coronel-pringles" class="entry" data-rank="25" data-score="0" data-place="coronel-pringles" data-name="Coronel Pringles">
+              <td class="rank" data-rank="25">25</td>
+              <td><a href="../place/coronel-pringles.html">Coronel Pringles</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="6:58pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="0">
+                <span>0%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=coronel-pringles&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="cordoba" class="entry" data-rank="1" data-score="90" data-place="cordoba" data-name="Córdoba">
+              <td class="rank" data-rank="1">1</td>
+              <td><a href="../place/cordoba.html">Córdoba</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="8:45pm on 28th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="100">
+                <span>100%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=cordoba&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="formosa" class="entry" data-rank="15" data-score="55" data-place="formosa" data-name="Formosa">
+              <td class="rank" data-rank="15">15</td>
+              <td><a href="../place/formosa.html">Formosa</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:00pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="61">
+                <span>61%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=formosa&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="general-pueyrredon" class="entry" data-rank="1" data-score="90" data-place="general-pueyrredon" data-name="General Pueyrredon">
+              <td class="rank" data-rank="1">1</td>
+              <td><a href="../place/general-pueyrredon.html">General Pueyrredon</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:03pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="100">
+                <span>100%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=general-pueyrredon&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="godoy-cruz" class="entry" data-rank="25" data-score="0" data-place="godoy-cruz" data-name="Godoy Cruz">
+              <td class="rank" data-rank="25">25</td>
+              <td><a href="../place/godoy-cruz.html">Godoy Cruz</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:03pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="0">
+                <span>0%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=godoy-cruz&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="gualeguaychu" class="entry" data-rank="12" data-score="75" data-place="gualeguaychu" data-name="Gualeguaychu">
+              <td class="rank" data-rank="12">12</td>
+              <td><a href="../place/gualeguaychu.html">Gualeguaychu</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:06pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="83">
+                <span>83%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=gualeguaychu&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="junin" class="entry" data-rank="15" data-score="55" data-place="junin" data-name="Junín">
+              <td class="rank" data-rank="15">15</td>
+              <td><a href="../place/junin.html">Junín</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:08pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="61">
+                <span>61%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=junin&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="la-plata" class="entry" data-rank="15" data-score="55" data-place="la-plata" data-name="La Plata">
+              <td class="rank" data-rank="15">15</td>
+              <td><a href="../place/la-plata.html">La Plata</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:10pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="61">
+                <span>61%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=la-plata&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="lincoln" class="entry" data-rank="25" data-score="0" data-place="lincoln" data-name="Lincoln">
+              <td class="rank" data-rank="25">25</td>
+              <td><a href="../place/lincoln.html">Lincoln</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:12pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="0">
+                <span>0%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=lincoln&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="lujan" class="entry" data-rank="1" data-score="90" data-place="lujan" data-name="Luján">
+              <td class="rank" data-rank="1">1</td>
+              <td><a href="../place/lujan.html">Luján</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:14pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="100">
+                <span>100%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=lujan&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="mendoza" class="entry" data-rank="15" data-score="55" data-place="mendoza" data-name="Mendoza">
+              <td class="rank" data-rank="15">15</td>
+              <td><a href="../place/mendoza.html">Mendoza</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="3:54pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="61">
+                <span>61%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=mendoza&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="mercedes" class="entry" data-rank="24" data-score="40" data-place="mercedes" data-name="Mercedes">
+              <td class="rank" data-rank="24">24</td>
+              <td><a href="../place/mercedes.html">Mercedes</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:16pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="44">
+                <span>44%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=mercedes&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="moreno" class="entry" data-rank="13" data-score="70" data-place="moreno" data-name="Moreno">
+              <td class="rank" data-rank="13">13</td>
+              <td><a href="../place/moreno.html">Moreno</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:23pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="78">
+                <span>78%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=moreno&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="moron" class="entry" data-rank="25" data-score="0" data-place="moron" data-name="Morón">
+              <td class="rank" data-rank="25">25</td>
+              <td><a href="../place/moron.html">Morón</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:24pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="0">
+                <span>0%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=moron&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="neuquen" class="entry" data-rank="15" data-score="55" data-place="neuquen" data-name="Neuquen">
+              <td class="rank" data-rank="15">15</td>
+              <td><a href="../place/neuquen.html">Neuquen</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:27pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="61">
+                <span>61%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=neuquen&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="olavarria" class="entry" data-rank="1" data-score="90" data-place="olavarria" data-name="Olavarría">
+              <td class="rank" data-rank="1">1</td>
+              <td><a href="../place/olavarria.html">Olavarría</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:31pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="100">
+                <span>100%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=olavarria&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="pilar" class="entry" data-rank="1" data-score="90" data-place="pilar" data-name="Pilar">
+              <td class="rank" data-rank="1">1</td>
+              <td><a href="../place/pilar.html">Pilar</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="4:40pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="100">
+                <span>100%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=pilar&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="rafaela" class="entry" data-rank="25" data-score="0" data-place="rafaela" data-name="Rafaela">
+              <td class="rank" data-rank="25">25</td>
+              <td><a href="../place/rafaela.html">Rafaela</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:33pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="0">
+                <span>0%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=rafaela&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="rio-segundo" class="entry" data-rank="1" data-score="90" data-place="rio-segundo" data-name="Rio Segundo">
+              <td class="rank" data-rank="1">1</td>
+              <td><a href="../place/rio-segundo.html">Rio Segundo</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:35pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="100">
+                <span>100%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=rio-segundo&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="rivadavia" class="entry" data-rank="25" data-score="0" data-place="rivadavia" data-name="Rivadavia">
+              <td class="rank" data-rank="25">25</td>
+              <td><a href="../place/rivadavia.html">Rivadavia</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:35pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="0">
+                <span>0%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=rivadavia&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="rosario" class="entry" data-rank="1" data-score="90" data-place="rosario" data-name="Rosario">
+              <td class="rank" data-rank="1">1</td>
+              <td><a href="../place/rosario.html">Rosario</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:38pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="100">
+                <span>100%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=rosario&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="salta" class="entry" data-rank="13" data-score="70" data-place="salta" data-name="Salta">
+              <td class="rank" data-rank="13">13</td>
+              <td><a href="../place/salta.html">Salta</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:40pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="78">
+                <span>78%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=salta&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="san-isidro" class="entry" data-rank="25" data-score="0" data-place="san-isidro" data-name="San Isidro">
+              <td class="rank" data-rank="25">25</td>
+              <td><a href="../place/san-isidro.html">San Isidro</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:41pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="0">
+                <span>0%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=san-isidro&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="san-juan" class="entry" data-rank="25" data-score="0" data-place="san-juan" data-name="San Juan">
+              <td class="rank" data-rank="25">25</td>
+              <td><a href="../place/san-juan.html">San Juan</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:41pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="0">
+                <span>0%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=san-juan&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="san-luis" class="entry" data-rank="25" data-score="0" data-place="san-luis" data-name="San Luis">
+              <td class="rank" data-rank="25">25</td>
+              <td><a href="../place/san-luis.html">San Luis</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:42pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="0">
+                <span>0%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=san-luis&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="san-miguel" class="entry" data-rank="15" data-score="55" data-place="san-miguel" data-name="San Miguel">
+              <td class="rank" data-rank="15">15</td>
+              <td><a href="../place/san-miguel.html">San Miguel</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:46pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="61">
+                <span>61%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=san-miguel&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="san-pedro" class="entry" data-rank="25" data-score="0" data-place="san-pedro" data-name="San Pedro">
+              <td class="rank" data-rank="25">25</td>
+              <td><a href="../place/san-pedro.html">San Pedro</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:47pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="0">
+                <span>0%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=san-pedro&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="santa-rosa" class="entry" data-rank="23" data-score="45" data-place="santa-rosa" data-name="Santa Rosa">
+              <td class="rank" data-rank="23">23</td>
+              <td><a href="../place/santa-rosa.html">Santa Rosa</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:48pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="50">
+                <span>50%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=santa-rosa&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="tigre" class="entry" data-rank="1" data-score="90" data-place="tigre" data-name="Tigre">
+              <td class="rank" data-rank="1">1</td>
+              <td><a href="../place/tigre.html">Tigre</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:51pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="100">
+                <span>100%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=tigre&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="trenque-lauquen" class="entry" data-rank="25" data-score="0" data-place="trenque-lauquen" data-name="Trenque Lauquen">
+              <td class="rank" data-rank="25">25</td>
+              <td><a href="../place/trenque-lauquen.html">Trenque Lauquen</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:52pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="0">
+                <span>0%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=trenque-lauquen&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="ushuaia" class="entry" data-rank="15" data-score="55" data-place="ushuaia" data-name="Ushuaia">
+              <td class="rank" data-rank="15">15</td>
+              <td><a href="../place/ushuaia.html">Ushuaia</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="7:54pm on 29th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="61">
+                <span>61%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=ushuaia&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="vicente-lopez" class="entry" data-rank="15" data-score="55" data-place="vicente-lopez" data-name="Vicente López">
+              <td class="rank" data-rank="15">15</td>
+              <td><a href="../place/vicente-lopez.html">Vicente López</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="3:22pm on 30th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="61">
+                <span>61%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=vicente-lopez&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="villa-la-angostura" class="entry" data-rank="25" data-score="0" data-place="villa-la-angostura" data-name="Villa La Angostura">
+              <td class="rank" data-rank="25">25</td>
+              <td><a href="../place/villa-la-angostura.html">Villa La Angostura</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="no" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="3:23pm on 30th May 2018 (Submitted by anonymous and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="0">
+                <span>0%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=villa-la-angostura&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+            
+            
+            <tr id="villa-maria" class="entry" data-rank="1" data-score="90" data-place="villa-maria" data-name="Villa María">
+              <td class="rank" data-rank="1">1</td>
+              <td><a href="../place/villa-maria.html">Villa María</a></td>
+              <td>
+                <ul class="availability availability-slice">
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Liciencia Abierta" data-toggle="tooltip"><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible gratuitamente online" data-toggle="tooltip"><i class="fa fa-eye"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponibles gratuitamente" data-toggle="tooltip"><i class="fa fa-dollar"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="Disponible en una sola descarga" data-toggle="tooltip"><i class="fa fa-copy"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="A hoy" data-toggle="tooltip"><i class="fa fa-clock-o"></i>&nbsp;</li>
+                  
+                    
+                      
+                      
+                    
+                    <li class="yes" title="En formato abierto" data-toggle="tooltip"><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                  
+                </ul>
+              </td>
+              
+              <td class="year">
+                
+                  <span title="9:26pm on 28th May 2018 (Submitted by Roque De Benedictis and reviewed by Roque De Benedictis)">2018</span>
+                
+              </td>
+              
+              <td class="score" data-score="100">
+                <span>100%</span>
+              </td>
+              
+                <td class="admin">
+                
+                  <a href="../submit/index.html@place=villa-maria&amp;dataset=transport.html" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                
+                </td>
+              
+            </tr>
+
+            
+            
+            
+
+          
+
+        </tbody>
+    </table>
+</div>
+<div id="popover" class="popover fade bottom in" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>
+
+  </div>
+</section>
+
+
+
+    
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-primary">
+        
+          <a class="footer-logo" href="https://okfn.org/"><img src="https://a.okfn.org/img/oki/landscape-white-468x122.png" alt="Open Knowledge International"></a>
+        
+          <ul class="footer-links pull-right">
+            <li><a href="https://okfn.org/privacy-policy/">Privacy policy</a></li>
+            <li><a href="https://okfn.org/ip-policy/">IP policy</a></li>
+            <li><a href="https://okfn.org/cookie-policy/">Cookie policy</a></li>
+            <li><a href="https://okfn.org/terms-of-use/">Terms of use</a></li>
+            <li><a href="http://okfn.org/opendata/" title="More about Open Data">What is Open Data</a></li>
+            <li><a href="http://meta.census.okfn.org/">Run Your Own Local Open Data Census</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-secondary">
+          
+          <p class="pull-right">
+            <strong>Download:</strong> <a href="../api/entries.cascade.csv">Current (CSV)</a> |
+            <a href="../api/entries.cascade.flat.csv">Current (Flat CSV)</a> |
+            <a href="../api/entries.csv">All (CSV)</a> |
+            <a href="../api/entries.cascade.json">Current (JSON)</a> |
+            <a href="../api/entries.json">All (JSON)</a>
+          </p>
+          
+          <p>
+            <a href="http://opendatacommons.org/licenses/pddl/1.0">Data License (Public Domain)</a>. <a href="https://github.com/okfn/opendatasurvey/">Source code</a>.
+          </p>
+        </div>
+        
+          <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+          
+            <a href="http://id.survey.okfn.org/login">Login</a>
+          
+        
+        
+      </div>
+    </footer>
+
+  <script type="text/javascript">
+    var siteUrl = "/";
+  </script>
+  <script data-main="/scripts/site" src="../bower_components/requirejs/require.js"></script>
+  </body>
+</html>
